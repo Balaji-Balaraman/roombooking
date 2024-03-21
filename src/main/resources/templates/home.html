@@ -12,7 +12,7 @@
     </form>
 
 
-    <a href="/bookings/new" class="btn btn-primary mt-3 mb-5">New Booking</a>
+    <a href="/roombooking-0.0.1-SNAPSHOT/bookings/new" class="btn btn-primary mt-3 mb-5">New Booking</a>
 
     <h3 class="mt-5" th:if="${bookings.size() == 0}">There are no meetings currently scheduled for this date.</h3>
 
@@ -35,8 +35,8 @@
                     <p>Participants: <span th:text="${booking.participants}">participants</span></p>
                 </div>
                 <div class="col-6">
-                    <a th:href="@{/bookings/edit(id=${booking.id})}" class="btn btn-warning">Amend</a>
-                    <a th:href="@{/bookings/delete(id=${booking.id})}" class="btn btn-danger">Cancel</a>
+                    <a th:href="@{/roombooking-0.0.1-SNAPSHOT/bookings/edit(id=${booking.id})}" class="btn btn-warning">Amend</a>
+                    <a th:href="@{/roombooking-0.0.1-SNAPSHOT/bookings/delete(id=${booking.id})}" class="btn btn-danger">Cancel</a>
                 </div>
             </div>
         </div>

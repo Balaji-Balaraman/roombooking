@@ -17,7 +17,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Controller
-@RequestMapping("/roombooking-0.0.1-SNAPSHOT/bookings")
+@RequestMapping("/bookings")
 public class BookingController {
 
     @Autowired

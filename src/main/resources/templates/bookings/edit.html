@@ -7,7 +7,7 @@
     <div th:replace="fragments/menu::top"></div>
     <h1><span th:if="${booking.id == null}">Add</span><span th:if="${booking.id != null}">Edit</span> Booking</h1>
 
-    <form method="post" th:object="${booking}" action="/bookings/save">
+    <form method="post" th:object="${booking}" action="/roombooking-0.0.1-SNAPSHOT/bookings/save">
 
         <input type="hidden" th:field="*{id}" />
 

@@ -29,8 +29,8 @@
         <div class="col-6">
             <div th:each="room : ${rooms}" th:id="|room-${room.id}|" style="display: none;" class="roomDetails">
                 <h2>Room details</h2>
-                <a th:href="@{/rooms/edit(roomId=${room.id})}" class="btn btn-small btn-warning">edit</a>
-                <a th:href="@{/rooms/delete(roomId=${room.id})}" class="btn btn-small btn-warning">delete</a>
+                <a th:href="@{/roombooking-0.0.1-SNAPSHOT/rooms/edit(roomId=${room.id})}" class="btn btn-small btn-warning">edit</a>
+                <a th:href="@{/roombooking-0.0.1-SNAPSHOT/rooms/delete(roomId=${room.id})}" class="btn btn-small btn-warning">delete</a>
                 <table>
                     <tr>
                         <td>id</td><td th:text="${room.id}">id</td>

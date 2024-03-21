@@ -13,7 +13,7 @@ import java.sql.Date;
 import java.util.*;
 
 @Controller
-@RequestMapping("/roombooking-0.0.1-SNAPSHOT/roombooking")
+@RequestMapping("/roombooking")
 public class BookingDisplayController {
 
     @Autowired
