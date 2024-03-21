@@ -14,7 +14,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.validation.Valid;
 
 @Controller
-@RequestMapping("/users")
+@RequestMapping("/roombooking-0.0.1-SNAPSHOT/users")
 public class UserController {
 
     @Autowired
