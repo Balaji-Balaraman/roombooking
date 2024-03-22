@@ -20,11 +20,11 @@ public class RoombookingApplication extends SpringBootServletInitializer {
 		return builder.sources(RoombookingApplication.class);
 	}
 
-	@PostConstruct
-	void preventAxisPropertiesClassLoaderLeak() {
-		ClassLoader tccl = Thread.currentThread().getContextClassLoader();
-		Thread.currentThread().setContextClassLoader(AxisProperties.class.getClassLoader());
-		AxisProperties.getNameDiscoverer();
-		Thread.currentThread().setContextClassLoader(tccl);
-	}
+//	@PostConstruct
+//	void preventAxisPropertiesClassLoaderLeak() {
+//		ClassLoader tccl = Thread.currentThread().getContextClassLoader();
+//		Thread.currentThread().setContextClassLoader(AxisProperties.class.getClassLoader());
+//		AxisProperties.getNameDiscoverer();
+//		Thread.currentThread().setContextClassLoader(tccl);
+//	}
 }
